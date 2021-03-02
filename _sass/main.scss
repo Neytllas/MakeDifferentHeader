@@ -35,7 +35,7 @@ body {
       align-items: center;
       box-sizing: border-box;
 
-      .nav-collapse
+      .navbar-collapse
       {
         height: 100%;
         justify-content: space-around;
@@ -43,6 +43,14 @@ body {
         .navbar-nav
         {
           align-items: center;
+
+          .nav-item.active
+          {
+            .nav-link
+            {
+              color: #dcad76;
+            }
+          }
 
           .nav-link
             {
@@ -60,12 +68,6 @@ body {
               {
                 color: #999;
               }
-              
-              &.active
-              {
-                color: #dcad76;
-              }
-
             }
         }
     

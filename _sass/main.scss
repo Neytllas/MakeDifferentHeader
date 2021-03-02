@@ -8,27 +8,7 @@ body {
   font-family: $bodyFont;
 }
 
-
-.navbar 
-    {
-      background-color: #000000;
-      height: 77px;
-      position: relative;
-      z-index: 300;
-      align-items: center;
-      box-sizing: border-box;
-
-        .navbar-nav
-        {
-          align-items: center;
-
-          .nav-collapse
-          {
-            height: 100%;
-            justify-content: space-around;
-          }
-
-          .navbar-brand
+ .navbar-brand
           {
             width: 100px;
             height: 45px;    
@@ -46,6 +26,24 @@ body {
             align-items: center;
           }
 
+.navbar 
+    {
+      background-color: #000000;
+      height: 77px;
+      position: relative;
+      z-index: 300;
+      align-items: center;
+      box-sizing: border-box;
+
+      .nav-collapse
+      {
+        height: 100%;
+        justify-content: space-around;
+      }
+        .navbar-nav
+        {
+          align-items: center;
+
           .nav-link
             {
               color: #ffffff;
@@ -58,17 +56,19 @@ body {
               text-transform: uppercase;
               line-height: 17px;
               
-
               &:hover
               {
                 color: #999;
               }
               
-              &:active
+              &.active
               {
                 color: #dcad76;
               }
 
             }
         }
-    }
+    
+      }
+
+        

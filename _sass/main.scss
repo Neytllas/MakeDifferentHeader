@@ -13,11 +13,17 @@ body {
   background-color: #0099ff;
   position: relative;
   height: 50px;
+  padding: 0rem 0rem;
+
+  .container
+  {
+    height: 100%;
+  }
 
   .navbar-collapse
   {
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .navbar-brand
@@ -29,13 +35,16 @@ body {
 
     .navbar-nav
     {
+      height: 100%;
       .nav-item
       {
         align-items: center;
         position: relative;
+        display: flex;
 
-        &.active::after
+        &.selected::after
         {
+          content: "";
           position: absolute;
           bottom: 0px;
           left: 4px;

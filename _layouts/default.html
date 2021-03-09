@@ -12,23 +12,24 @@
 <body>
 
     <nav class="navbar navbar-expand-lg">
+      <div class="container">
       <a class="navbar-brand" href="/"><i class="fab fa-fort-awesome-alt"> pikaboo</i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav d-flex">
-          <li class="nav-item">
-            <a class="nav-link" href="/other.html">Other {% if page.url == "/other.html" %}{% endif %}</a>
+          <li class="nav-item {% if page.url == '/other.html' %}active{% endif %}">
+            <a class="nav-link" href="/other.html">Other </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/information.html">Information {% if page.url == "/information.html" %} {% endif %}</a>
+          <li class="nav-item {% if page.url == '/information.html' %}active{% endif %}">
+            <a class="nav-link" href="/information.html">Information</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/onOther.html">On other {% if page.url == "/onOther.html" %}{% endif %}</a>
+          <li class="nav-item {% if page.url == '/onOther.html' %}active{% endif %}">
+            <a class="nav-link" href="/onOther.html">On other</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/WebSite.html">WebSite {% if page.url == "/WebSite.html" %}{% endif %}</a>
+          <li class="nav-item {% if page.url == '/WebSite.html' %}active{% endif %}">
+            <a class="nav-link" href="/WebSite.html">WebSite</a>
           </li>
         </ul>
         <ul class="navbar-nav d-flex">
@@ -37,6 +38,7 @@
           </li>
         </ul>
       </div>
+    </div>
     </nav>
 
  <div class="container">
